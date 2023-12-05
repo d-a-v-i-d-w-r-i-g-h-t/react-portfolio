@@ -7,7 +7,7 @@ import {
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <div className="footer mt-5 p-3">
       <div className="social-icons">
         <a
           className="icon"

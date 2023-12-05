@@ -1,38 +1,44 @@
 {
   "projects": [
     {
+      "id": 1,
       "title": "Project 1",
-      "image": "path/to/project1.gif",
+      "image": "src/assets/images/path/to/project1.gif",
       "deployedPage": "https://example.com/project1",
       "githubRepo": "https://github.com/example/project1"
     },
     {
+      "id": 2,
       "title": "Project 2",
-      "image": "path/to/project2.png",
+      "image": "src/assets/images/path/to/project2.png",
       "deployedPage": "https://example.com/project2",
       "githubRepo": "https://github.com/example/project2"
     },
     {
+      "id": 3,
       "title": "Project 3",
-      "image": "path/to/project3.gif",
+      "image": "src/assets/images/path/to/project3.gif",
       "deployedPage": "https://example.com/project3",
       "githubRepo": "https://github.com/example/project3"
     },
     {
+      "id": 4,
       "title": "Project 4",
-      "image": "path/to/project4.png",
+      "image": "src/assets/images/path/to/project4.png",
       "deployedPage": "https://example.com/project4",
       "githubRepo": "https://github.com/example/project4"
     },
     {
+      "id": 5,
       "title": "Project 5",
-      "image": "path/to/project5.gif",
+      "image": "src/assets/images/path/to/project5.gif",
       "deployedPage": "https://example.com/project5",
       "githubRepo": "https://github.com/example/project5"
     },
     {
+      "id": 6,
       "title": "Project 6",
-      "image": "path/to/project6.png",
+      "image": "src/assets/images/path/to/project6.png",
       "deployedPage": "https://example.com/project6",
       "githubRepo": "https://github.com/example/project6"
     }

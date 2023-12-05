@@ -5,7 +5,7 @@ export default function Navigation() {
   const currentPage = useLocation().pathname;
 
   return (
-    <nav className="navbar navbar-expand-lg pb-0">
+    <nav className="navbar navbar-expand-lg px-1 pb-0">
       <div className="container-fluid">
         <p className="navbar-brand mb-2 h1">David Wright</p>
         <ul className="nav nav-tabs justify-content-center">
