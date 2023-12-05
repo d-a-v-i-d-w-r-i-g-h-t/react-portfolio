@@ -1,6 +1,7 @@
 export default function Resume() {
+  // file path for downloadable resume
   const resumeFilePath = 'src/assets/files/Resume-David-Wright.pdf';
-  
+
   return (
     <div>
       <p>
@@ -11,6 +12,7 @@ export default function Resume() {
           target="_blank"
         >here</a>
       </p>
+      {/* list of proficiencies */}
       <h3 className="mt-5">Proficiencies</h3>
       <ul className="multi-column-list">
         <li>HTML</li>

@@ -1,12 +1,12 @@
+// useState to track multiple state variables
 import { useState } from 'react';
 
+// import helper function to validate email addresses
 import { validateEmail } from '../utils/helpers';
-
-
 
 function Contact() {
 
-  // state variables for form fields
+  // state variables for form fields, error messages, and disabled status of Submit button
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -15,6 +15,7 @@ function Contact() {
   const [messageErrorMessage, setMessageErrorMessage] = useState('');
   const [isSubmitDisabled, setSubmitDisabled] = useState(true);
 
+  // handle input change events (typing in the input fields)
   const handleInputChange = (e) => {
     // get the value and name of input that was changed
     const { target } = e;
@@ -31,53 +32,82 @@ function Contact() {
     }
   };
 
+  // handle blur events (input field losing focus by clicking or tabbing out, etc.)
   const handleOnBlur = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+
     const missingInputMessage = 'Field is required, please provide input';
 
-    if ( !validateEmail(email) ) {
-      console.log('validateEmail(email)');
-      console.log(email);
-      console.log(validateEmail(email));
-      setEmailErrorMessage('Email is invalid. Please re-enter.');
-      // add class for red text styling
-    } else if (!email) {
-      setEmailErrorMessage(missingInputMessage);
-    } else {
-      setEmailErrorMessage('');
-      // remove class for red text styling
-    }
-    
-    if ( !name ) {
+    if ( inputType === 'email' ) {
+
+      // validate email address
+      if ( !validateEmail(email) ) {
+        console.log('validateEmail(email)');
+        console.log(email);
+        console.log(validateEmail(email));
+        setEmailErrorMessage('Email is invalid. Please re-enter.');
+
+      // check for empty email input field
+      } else if ( !email ) {
+        setEmailErrorMessage(missingInputMessage);
+
+      // if no issues remove email error message
+      } else {
+        setEmailErrorMessage('');
+      }
+
+    } else if ( inputType === 'name' ) {
+      
+      // check for empty name field
+      if ( !name ) {
       setNameErrorMessage(missingInputMessage);
-    } else {
-      setNameErrorMessage('');
+
+      // if not empty remove name error message
+      } else {
+        setNameErrorMessage('');
+      }
+
+    } else { // input type is 'message'
+
+        // check for empty message field
+      if ( !message ) {
+        setMessageErrorMessage(missingInputMessage);
+
+      // if not empty remove message error message
+      } else {
+        setMessageErrorMessage('');
+      }
+
     }
 
-    if ( !message ) {
-      setMessageErrorMessage(missingInputMessage);
-    } else {
-      setMessageErrorMessage('');
-    }
-
-    //update the disabled state based on validation conditions
+    // update the disabled state based on validation conditions
+    // submit button will be enabled if all three fields have input and the email address passes validation
     setSubmitDisabled(!(name && email && message && validateEmail(email)));
   };
 
+  // handle form submit button click
   const handleFormSubmit = (e) => {
     e.preventDefault();
+
+    // no functionality yet, just log the click for now...
     console.log('Submit button clicked');
-    // clear form
+
+    // clear the form
     setName('');
     setEmail('');
     setMessage('');
-    // disable the submit button after submission
+
+    // disable the submit button after submission, default state is disabled
     setSubmitDisabled(true);
   }
   
+  // finally render the form
   return (
     <div>
       <p>Please provide your contact information:</p>
 
+      {/* submit button click event listener */}
       <form className="form my-5" onSubmit={handleFormSubmit}>
 
         {/* split name and email input fields across single row until small breakpoint, then stack */}
@@ -86,18 +116,22 @@ function Contact() {
           <div className="col-sm-6">
             <div className="mb-3">
               <label htmlFor="nameInput" className="form-label">Name</label>
+              {/* name value */}
               <input
                 value={name}
                 name="name"
+                // input change event listener
                 onChange={handleInputChange}
+                // on blur event listener
                 onBlur={handleOnBlur}
                 type="text"
                 className="form-control"
                 id="nameInput"
                 aria-describedby="nameHelp"
               />
+              {/* error message if name is missing */}
               <div id="nameHelp" className="form-text input-error">
-                {nameErrorMessage}
+                {nameErrorMessage} 
               </div>
             </div>
           </div>
@@ -105,16 +139,20 @@ function Contact() {
           <div className="col-sm-6">
             <div className="mb-3">
               <label htmlFor="emailInput" className="form-label">Email address</label>
+              {/* email value */}
               <input
                 value={email}
                 name="email"
+                // input change event listener
                 onChange={handleInputChange}
+                // on blur event listener
                 onBlur={handleOnBlur}
                 type="email"
                 className="form-control"
                 id="emailInput"
                 aria-describedby="emailHelp"
               />
+              {/* error message if email is missing or invalid */}
               <div id="emailHelp" className="form-text input-error">
                 {emailErrorMessage}
               </div>
@@ -125,27 +163,33 @@ function Contact() {
 
         <div className="mb-3">
           <label htmlFor="messageInput" className="form-label">Message</label>
+          {/* message value */}
           <textarea
             value={message}
             name="message"
+            // input change event listener
             onChange={handleInputChange}
+            // on blur event listener
             onBlur={handleOnBlur}
             className="form-control"
             id="messageInput"
             aria-describedby="messageHelp"
+            // number of rows for textarea
             rows={4}
           ></textarea>
+          {/* error message if message is missing */}
           <div id="messageHelp" className="form-text input-error">
             {messageErrorMessage}
           </div>
         </div>
-        
+        {/* submit button with modifiable disabled state (default is disabled) */}
         <button type="submit" className="btn btn-primary" disabled={isSubmitDisabled} >
           Submit
         </button>
       </form>
-
-      <p>Or contact me directly at <a className="link" href="mailto:d4v1dwr1gh7@gmail.com" className="link">d4v1dwr1gh7@gmail.com</a></p>
+      
+      {/* email link */}
+      <p>Or contact me directly at <a href="mailto:d4v1dwr1gh7@gmail.com" className="link">d4v1dwr1gh7@gmail.com</a></p>
     </div>
   );
 }

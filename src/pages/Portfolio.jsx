@@ -1,11 +1,13 @@
 import projectsData from '../assets/data/projects.json';
 import Project from '../components/Project';
 
+// call Project as framework for repeating project elements
 const Portfolio = () => {
   return (
     <div>
       <h1>Projects</h1>
       <div className="row">
+        {/* use map to apply each project in projectsData to the Project component */}
         {projectsData.projects.map(project => (
           <Project key={project.id} project={project} />
         ))}
