@@ -1,9 +1,21 @@
 export default function Footer() {
   return (
-    <div>
-      <p><a href="https://github.com/d-a-v-i-d-w-r-i-g-h-t">GitHub</a></p>
-      <p><a href="https://www.linkedin.com/in/davidspencerwright/">LinkedIn</a></p>
-      <p><a href="https://medium.com/@d-a-v-i-d-w-r-i-g-h-t">Medium</a></p>
+    <div class="social-icons">
+      <a 
+        href="https://github.com/d-a-v-i-d-w-r-i-g-h-t"
+        rel="noopener noreferrer"
+        target="_blank"
+      >GitHub</a>
+      <a 
+        href="https://www.linkedin.com/in/davidspencerwright/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >LinkedIn</a>
+      <a 
+        href="https://medium.com/@d-a-v-i-d-w-r-i-g-h-t"
+        rel="noopener noreferrer"
+        target="_blank"
+      >Medium</a>
     </div>
   )
 }
