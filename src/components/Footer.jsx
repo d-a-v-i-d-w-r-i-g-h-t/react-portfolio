@@ -17,6 +17,7 @@ export default function Footer() {
           href="https://github.com/d-a-v-i-d-w-r-i-g-h-t"
           rel="noopener noreferrer"
           target="_blank"
+          aria-label="GitHub Profile"
         >
           <FontAwesomeIcon icon={faSquareGithub} size="3x" />
         </a>
@@ -27,6 +28,7 @@ export default function Footer() {
           href="https://www.linkedin.com/in/davidspencerwright/"
           rel="noopener noreferrer"
           target="_blank"
+          aria-label="LinkedIn Profile"
         >
           <FontAwesomeIcon icon={faLinkedin} size="3x" />
         </a>
@@ -37,7 +39,7 @@ export default function Footer() {
           href="https://medium.com/@d-a-v-i-d-w-r-i-g-h-t"
           rel="noopener noreferrer"
           target="_blank"
-          // style={{ color: '#a0a0a0', textDecoration: 'none' }}
+          aria-label="Medium Profile"
         >
           <FontAwesomeIcon icon={faMedium} size="3x" />
         </a>
