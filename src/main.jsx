@@ -1,9 +1,12 @@
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
+// import Bootstrap!
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import our own CSS!
 import './index.css';
 
+// import all pages
 import App from './App';
 import Error from './pages/Error';
 import About from './pages/About';
