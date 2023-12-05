@@ -1,7 +1,7 @@
 // dependencies from react-router-dom
 import { Link, useLocation } from 'react-router-dom';
 
-function Navigation() {
+export default function Navigation() {
   const currentPage = useLocation().pathname;
 
   return (
@@ -42,9 +42,7 @@ function Navigation() {
           Resume
         </Link>
       </li>
-      
+
     </ul>
   );
 }
-
-export default NavTabs;
