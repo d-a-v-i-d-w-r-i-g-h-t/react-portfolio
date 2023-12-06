@@ -13,6 +13,7 @@ const Resume = () => {
           className="link"
           rel="noopener noreferrer"
           target="_blank"
+          download="Resume-David-Wright.pdf"
         >here</a>
       </p>
       {/* list of proficiencies as individual mini cards */}
