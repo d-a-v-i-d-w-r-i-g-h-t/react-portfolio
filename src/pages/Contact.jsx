@@ -189,7 +189,7 @@ function Contact() {
       </form>
       
       {/* email link */}
-      <p>Or contact me directly at <a href="mailto:d4v1dwr1gh7@gmail.com" className="link">d4v1dwr1gh7@gmail.com</a></p>
+      <p>Or contact me directly at <a href="mailto:davidswright73@gmail.com" className="link">davidswright73@gmail.com</a></p>
     </div>
   );
 }

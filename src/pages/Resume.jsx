@@ -1,6 +1,37 @@
-export default function Resume() {
+import MiniCard from '../components/MiniCard';
+import './Resume.css';
+
+const Resume = () => {
   // file path for downloadable resume
   const resumeFilePath = 'src/assets/files/Resume-David-Wright.pdf';
+  // proficiencies array
+  const proficiencies = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "GitHub/Git",
+    "Bootstrap",
+    "The DOM",
+    "APIs",
+    "JQuery",
+    "JSON",
+    "AJAX",
+    "ES6",
+    "OOP",
+    "MySQL",
+    "MVC paradigm",
+    "Sequelize",
+    "Testing",
+    "Agile Development",
+    "PWAs",
+    "NoSQL",
+    "MERN Stack",
+    "MongoDB",
+    "Express",
+    "React",
+    "Node",
+  ];
+  
 
   return (
     <div>
@@ -12,34 +43,15 @@ export default function Resume() {
           target="_blank"
         >here</a>
       </p>
-      {/* list of proficiencies */}
+      {/* list of proficiencies as individual mini cards */}
       <h3 className="mt-5">Proficiencies</h3>
-      <ul className="multi-column-list">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>GitHub/Git</li>
-        <li>Bootstrap</li>
-        <li>The DOM</li>
-        <li>APIs</li>
-        <li>JQuery</li>
-        <li>JSON</li>
-        <li>AJAX</li>
-        <li>ES6</li>
-        <li>OOP</li>
-        <li>MySQL</li>
-        <li>MVC paradigm</li>
-        <li>Sequelize</li>
-        <li>Testing</li>
-        <li>Agile development</li>
-        <li>PWAs</li>
-        <li>NoSQL</li>
-        <li>MERN Stack</li>
-        <li>MongoDB</li>
-        <li>Express</li>
-        <li>React</li>
-        <li>Node</li>
-      </ul>
+      <div className="proficiency-container d-flex flex-wrap">
+        {proficiencies.map((proficiency, index) => (
+          <MiniCard key={index} proficiency={proficiency} />
+        ))}
+      </div>
     </div>
   );
 }
+
+export default Resume;
