@@ -13,7 +13,7 @@
       "title": "What to Watch",
       "image": "/assets/images/what-to-watch.png",
       "description": "Search for movies with user-selectable comparison data from multiple combined API requests.",
-      "deployedPage": "https://sheltered-inlet-69891-1c93b8a30eb8.herokuapp.com/",
+      "deployedPage": "https://d-a-v-i-d-w-r-i-g-h-t.github.io/what-to-watch//",
       "githubRepo": "https://github.com/d-a-v-i-d-w-r-i-g-h-t/what-to-watch"
     },
     {
@@ -37,7 +37,7 @@
       "title": "Coding Quiz Challenge",
       "image": "/assets/images/code-quiz.png",
       "description": "Take a timed multiple-choice coding quiz and track high scores with data persistence using local storage.",
-      "deployedPage": "https://example.com/project3",
+      "deployedPage": "https://d-a-v-i-d-w-r-i-g-h-t.github.io/code-quiz/",
       "githubRepo": "https://github.com/d-a-v-i-d-w-r-i-g-h-t/code-quiz"
     },
     {
