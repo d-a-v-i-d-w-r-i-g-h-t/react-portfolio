@@ -2,13 +2,11 @@
 
 ## Description 
 
-Your GitHub profile is an extremely important aspect of your public identity as a developer. A well-crafted one allows you to show off your work to other developers as well as potential employers. An important component of your GitHub profile—and one that many new developers often overlook—is the README.md file.
+For this project I wanted to use [React](https://react.dev/) to refactor a very simple application portfolio I had previously built. The original portfolio was essentially used only as a wireframe, as this project had to be built in an entirely different manner with React pages and components, including client-side routing using *react-router-dom*.
 
-The quality of a README often differentiates a good project from a bad project. A good one takes advantage of the opportunity to explain and showcase what your application does, justify the technologies used, and even talk about some of the challenges you faced and features you hope to implement in the future. A good README helps you stand out among the large crowd of developers putting their work on GitHub.
+I had more opportunities to solidify my understanding of [Bootstrap](https://getbootstrap.com/) for styling and page components. I also used [Vite](https://vitejs.dev/) for the development environment as well as to optimize and bundle my application for deployment.
 
-There's no one right way to structure a good README. There is one very wrong way, however, and that is to not include a README at all or to create a very anemic one. This guide outlines a few best practices. As you progress in your career, you will develop your own ideas about what makes a good README.
-
-At a minimum, your project README needs a title and a short description explaining the what, why, and how. What was your motivation? Why did you build this project? (Note: The answer is not "Because it was a homework assignment.") What problem does it solve? What did you learn? What makes your project stand out? 
+Various complications like form validation and repeating elements using React components provided additional valuable learning experiences.
 
 This project has been deployed on [Heroku](https://www.heroku.com/) and can be found [here](XXXXXXXXXXXXXXXXXXXXXXXXXXXXX).
 
@@ -35,27 +33,34 @@ To run it locally for development purposes, follow the above commands with
 npm run dev
 ```
 
-On loading the application, the **About Me** page is displayed.
+On loading the application, the **About Me** page is displayed. A nav bar at the top right provides navigaition links for the application. A footer has icons which link to user profiles on [GitHub](https://github.com/), [LinkedIn](https://www.linkedin.com/), and [Medium](https://medium.com/).
 
 ![About Me page](src/assets/images/about-me.png)
 
-Clicking on the other links 
+Clicking on the *Portfolio* link will display the **Portfolio** page. This page has screenshots of different projects and their titles, as well as links to their deployed pages and code repositories. The number of columns for the project cards is determined by Bootstrap breakpoints to allow for responsive resizing.
 
 ![Portfolio page](src/assets/images/portfolio.png)
 
+Clicking on the *Contact* link will display the **Contact** page. On this page the user can fill out a contact form. Input validation occurs on blur from any input field. Fields will be checked for content, and the email address field will validate that the input matches a standard email address format (see validation examples in the screenshot below). The Submit button will remain disabled until all fields have input and the entered email address is successfully validated.
+
+For now, the Submit button only instigates a console log before the input fields are cleared. Adding submission functionality is upcoming future work. In the meantime, a ```mailto:``` email address link is provided for contact purposes
+
 ![Contact page](src/assets/images/contact.png)
+
+Clicking on the *Resume* link will display the **Resume** page. On this page the user can download a resume and view a list of proficiencies. The proficiencies are displayed on mini cards contained in a wrapping Flexbox to allow for responsive resizing.
 
 ![Resume page](src/assets/images/resume.png)
 
 
-
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+I used [Font Awesome](https://www.npmjs.com/package/font-awesome) to get social media icons for my footer links.
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+I used [Bootstrap](https://www.npmjs.com/package/bootstrap) for *Nav*, *Card*, and *Form* elements, as well as for general styling.
 
-If you followed tutorials, include links to those here as well.
+I used [React](https://www.npmjs.com/package/react) to create responsive user interfaces, [react-dom](https://www.npmjs.com/package/react-dom) for React server renderers, and [react-router-dom](https://www.npmjs.com/package/react-router-dom) for React Router functionality.
+
+I used [Vite](https://www.npmjs.com/package/vite) for a dev server during development, including Hod Module Replacement (HMR), as well as for code bundling and optimization for deployment.
 
 
 ## License
