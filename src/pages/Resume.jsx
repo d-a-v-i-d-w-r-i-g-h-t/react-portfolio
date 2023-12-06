@@ -1,5 +1,4 @@
 import MiniCard from '../components/MiniCard';
-import './Resume.css';
 
 const Resume = () => {
   // file path for downloadable resume
