@@ -41,13 +41,13 @@ function Contact() {
 
     if ( inputType === 'email' ) {
 
-      // validate email address
-      if ( !validateEmail(email) ) {
-        setEmailErrorMessage('Email is invalid. Please re-enter.');
-
       // check for empty email input field
-      } else if ( !email ) {
+      if ( !email ) {
         setEmailErrorMessage(missingInputMessage);
+
+      // if there is an email input, validate it
+      } else if ( !validateEmail(email) ) {
+        setEmailErrorMessage('Email is invalid. Please re-enter.');
 
       // if no issues remove email error message
       } else {
