@@ -8,7 +8,7 @@ I had more opportunities to solidify my understanding of [Bootstrap](https://get
 
 Various complications like form validation and repeating elements using React components provided additional valuable learning experiences.
 
-This project has been deployed on [Heroku](https://www.heroku.com/) and can be found [here](XXXXXXXXXXXXXXXXXXXXXXXXXXXXX).
+This project has been deployed on [Heroku](https://www.heroku.com/) and can be found [here](https://react-portfolio-david-wright-fb25180d6958.herokuapp.com/).
 
 
 ## Installation
@@ -26,7 +26,7 @@ to bundle and optimize the application using Vite.
 
 ## Usage 
 
-The application can be accessed at its deployed location [here](XXXXXXXXXXXXXXXXXXXXXXXXXXXXX).
+The application can be accessed at its deployed location [here](https://react-portfolio-david-wright-fb25180d6958.herokuapp.com/).
 
 To run it locally for development purposes, follow the above commands with
 ```
