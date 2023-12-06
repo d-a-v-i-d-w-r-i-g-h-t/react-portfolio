@@ -4,7 +4,7 @@ export default function About() {
       {/* profile photo */}
       <img
         className="rounded mb-5"
-        src="src/assets/images/David-Profile-Photo.jpeg"
+        src="public/assets/images/David-Profile-Photo.jpeg"
         alt="David Wright"
         width="200"
       />

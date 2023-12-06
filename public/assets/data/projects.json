@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Gym Flow",
-      "image": "src/assets/images/gym-flow.png",
+      "image": "public/assets/images/gym-flow.png",
       "description": "Workout and exercise organizer with user accounts and social interaction.",
       "deployedPage": "https://sheltered-inlet-69891-1c93b8a30eb8.herokuapp.com/",
       "githubRepo": "https://github.com/d-a-v-i-d-w-r-i-g-h-t/gym-flow"
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "title": "What to Watch",
-      "image": "src/assets/images/what-to-watch.png",
+      "image": "public/assets/images/what-to-watch.png",
       "description": "Search for movies with user-selectable comparison data from multiple combined API requests.",
       "deployedPage": "https://sheltered-inlet-69891-1c93b8a30eb8.herokuapp.com/",
       "githubRepo": "https://github.com/d-a-v-i-d-w-r-i-g-h-t/what-to-watch"
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "title": "Just Another Text Editor",
-      "image": "src/assets/images/just-another-text-editor.png",
+      "image": "public/assets/images/just-another-text-editor.png",
       "description": "Installable progressive web app text editor with offline storage using IndexedDB.",
       "deployedPage": "https://floating-eyrie-53578-efda4f2185f3.herokuapp.com/",
       "githubRepo": "https://github.com/d-a-v-i-d-w-r-i-g-h-t/just-another-text-editor"
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "title": "Note Taker",
-      "image": "src/assets/images/note-taker.png",
+      "image": "public/assets/images/note-taker.png",
       "description": "Note Taker demonstrating CRUD operations and modular routing.",
       "deployedPage": "https://note-taker-1212-e1e8ce30fdfa.herokuapp.com/",
       "githubRepo": "https://github.com/d-a-v-i-d-w-r-i-g-h-t/note-taker"
@@ -35,7 +35,7 @@
     {
       "id": 5,
       "title": "Coding Quiz Challenge",
-      "image": "src/assets/images/code-quiz.png",
+      "image": "public/assets/images/code-quiz.png",
       "description": "Take a timed multiple-choice coding quiz and track high scores with data persistence using local storage.",
       "deployedPage": "https://example.com/project3",
       "githubRepo": "https://github.com/d-a-v-i-d-w-r-i-g-h-t/code-quiz"
@@ -43,7 +43,7 @@
     {
       "id": 6,
       "title": "Weather Dashboard",
-      "image": "src/assets/images/weather-dashboard.png",
+      "image": "public/assets/images/weather-dashboard.png",
       "description": "Retrieve current weather and 5-day forecast with API calls and persistent search history.",
       "deployedPage": "https://d-a-v-i-d-w-r-i-g-h-t.github.io/weather-dashboard/",
       "githubRepo": "https://github.com/d-a-v-i-d-w-r-i-g-h-t/weather-dashboard"
