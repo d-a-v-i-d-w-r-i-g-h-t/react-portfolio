@@ -1,3 +1,4 @@
+// mini card for proficiencies
 const MiniCard = ({ proficiency }) => {
   return(
     <div className="mini-card card m-1 text-center">

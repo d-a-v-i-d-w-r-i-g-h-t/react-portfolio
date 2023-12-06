@@ -43,9 +43,6 @@ function Contact() {
 
       // validate email address
       if ( !validateEmail(email) ) {
-        console.log('validateEmail(email)');
-        console.log(email);
-        console.log(validateEmail(email));
         setEmailErrorMessage('Email is invalid. Please re-enter.');
 
       // check for empty email input field

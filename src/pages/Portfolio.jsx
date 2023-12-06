@@ -5,7 +5,7 @@ import Project from '../components/Project';
 const Portfolio = () => {
   return (
     <div>
-      <h1>Projects</h1>
+      <h1 className='mb-4'>Projects</h1>
       <div className="row">
         {/* use map to apply each project in projectsData to the Project component */}
         {projectsData.projects.map(project => (
