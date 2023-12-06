@@ -1,4 +1,4 @@
-import projectsData from '../assets/data/projects.json';
+import projectsData from '../../public/assets/data/projects.json';
 import Project from '../components/Project';
 
 // call Project as framework for repeating project elements
