@@ -1,9 +1,9 @@
 import MiniCard from '../components/MiniCard';
-import proficiencies from '../../public/assets/data/proficiencies';
+import proficiencies from 'assets/data/proficiencies';
 
 const Resume = () => {
   // file path for downloadable resume
-  const resumeFilePath = 'public/assets/files/Resume-David-Wright.pdf';
+  const resumeFilePath = 'assets/files/Resume-David-Wright.pdf';
 
   return (
     <div>

@@ -35,21 +35,21 @@ npm run dev
 
 On loading the application, the **About Me** page is displayed. A nav bar at the top right provides navigaition links for the application. A footer has icons which link to user profiles on [GitHub](https://github.com/), [LinkedIn](https://www.linkedin.com/), and [Medium](https://medium.com/).
 
-![About Me page](public/assets/images/about-me.png)
+![About Me page](_README-images/about-me.png)
 
 Clicking on the *Portfolio* link will display the **Portfolio** page. This page has screenshots of different projects and their titles, as well as links to their deployed pages and code repositories. The number of columns for the project cards is determined by Bootstrap breakpoints to allow for responsive resizing.
 
-![Portfolio page](public/assets/images/portfolio.png)
+![Portfolio page](_README-images/portfolio.png)
 
 Clicking on the *Contact* link will display the **Contact** page. On this page the user can fill out a contact form. Input validation occurs on blur from any input field. Fields will be checked for content, and the email address field will validate that the input matches a standard email address format (see validation examples in the screenshot below). The Submit button will remain disabled until all fields have input and the entered email address is successfully validated.
 
 For now, the Submit button only instigates a console log before the input fields are cleared. Adding submission functionality is upcoming future work. In the meantime, a ```mailto:``` email address link is provided for contact purposes
 
-![Contact page](public/assets/images/contact.png)
+![Contact page](_README-images/contact.png)
 
 Clicking on the *Resume* link will display the **Resume** page. On this page the user can download a resume and view a list of proficiencies. The proficiencies are displayed on mini cards contained in a wrapping Flexbox to allow for responsive resizing.
 
-![Resume page](public/assets/images/resume.png)
+![Resume page](_README-images/resume.png)
 
 
 ## Credits

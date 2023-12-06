@@ -7,10 +7,7 @@ const __dirname = dirname(__filename);
 
 const app = express();
 
-// Import the 'path' module
-import path from 'path';
 
-// Use 'path' module for correct path handling
 app.use(express.static(path.join(__dirname, 'dist')));
 
 app.get('*', (req, res) => {
