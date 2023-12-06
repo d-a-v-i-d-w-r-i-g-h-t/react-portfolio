@@ -35,10 +35,18 @@ To run it locally for development purposes, follow the above commands with
 npm run dev
 ```
 
+On loading the application, the **About Me** page is displayed.
 
-```md
-![alt text](assets/images/screenshot.png)
-```
+![About Me page](src/assets/images/about-me.png)
+
+Clicking on the other links 
+
+![Portfolio page](src/assets/images/portfolio.png)
+
+![Contact page](src/assets/images/contact.png)
+
+![Resume page](src/assets/images/resume.png)
+
 
 
 ## Credits

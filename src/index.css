@@ -28,14 +28,9 @@ body {
 
 .navbar-brand {
   color: var(--page-color);
-  font-size: 150%
 }
 .navbar-brand:hover {
   color: var(--page-color);
-}
-
-.nav-link {
-  height: 50px;
 }
 
 .nav-tabs .nav-link:hover {

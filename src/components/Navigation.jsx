@@ -8,10 +8,10 @@ export default function Navigation() {
   // return the nav bar
   // formatting here is bootstrap; other formatting is in the index.css file
   return (
-    <nav className="navbar navbar-expand-lg px-1 pb-0">
-      <div className="container-fluid">
-        <p className="navbar-brand mb-2 h1">David Wright</p>
-        <ul className="nav nav-tabs justify-content-center">
+    <nav className="navbar navbar-expand-lg pt-2 px-1 pb-0">
+      <div className="container-fluid py-0 my-0">
+        <p className="navbar-brand mb-0 p-0 fs-2">David Wright</p>
+        <ul className="nav nav-tabs justify-content-center p-0 pt-2 m-0">
 
           <li className="nav-item">
             {/* link for first nav item, About Me, root route '/' */}
